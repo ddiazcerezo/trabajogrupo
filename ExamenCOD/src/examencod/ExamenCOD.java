@@ -27,15 +27,20 @@ System.out.print(x + " ");
 }         	 
 	}
 public static boolean metodoMio(int variable){
-int j = 2;
-boolean aux=true;
-while ((aux) && (j!=variable)){
-if (variable % j == 0)
-aux = false;
-j++;
-}
-return aux;
+return  metodoCambiado(variable);
   } 	 
+
+    private static boolean metodoCambiado(int variable) {
+        final int numero = 2;
+        int j = numero;
+        boolean aux=true;
+        while ((aux) && (j!=variable)){
+            if (variable % j == 0)
+                aux = false;
+            j++;
+        }
+        return aux;
+    }
     
 }
 
